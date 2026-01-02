@@ -16,16 +16,16 @@ let clickCount = 0;
 let clickTimer;
 
 let prizes = [
-  {name:"Free Side", prob:10, img:"images/side.png"},
-  {name:"Free Dessert", prob:10, img:"images/dessert.png"},
-  {name:"Free Coffee", prob:10, img:"images/coffee.png"},
-  {name:"Free Coke", prob:15, img:"images/coke.png"},
-  {name:"Free Fries", prob:15, img:"images/fries.png"},
-  {name:"Free Burger", prob:10, img:"images/burger.png"},
-  {name:"10% OFF", prob:10, img:"images/discount.png"},
-  {name:"20% OFF", prob:10, img:"images/discount20.png"},
-  {name:"Try Again", prob:10, img:"images/try.png"},
-  {name:"Lose", prob:10, img:"images/lose.png"}
+  {name:"Free Side", prob:10, img:"side.png"},
+  {name:"Free Dessert", prob:10, img:"dessert.png"},
+  {name:"Free Coffee", prob:10, img:"coffee.png"},
+  {name:"Free Coke", prob:15, img:"coke.png"},
+  {name:"Free Fries", prob:15, img:"fries.png"},
+  {name:"Free Burger", prob:10, img:"burger.png"},
+  {name:"10% OFF", prob:10, img:"discount.png"},
+  {name:"20% OFF", prob:10, img:"discount20.png"},
+  {name:"Try Again", prob:10, img:"try.png"},
+  {name:"Lose", prob:10, img:"lose.png"}
 ];
 
 const segmentColors = [
@@ -276,4 +276,5 @@ saveAdmin.addEventListener("click", () => {
   });
   alert("تم حفظ التعديلات ✅");
   drawWheel(); // إعادة رسم العجلة بالقيم الجديدة
+
 });
