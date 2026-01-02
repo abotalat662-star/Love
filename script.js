@@ -16,16 +16,16 @@ let clickCount = 0;
 let clickTimer;
 
 let prizes = [
-  {name:"Free Side", prob:10, img:"side.png"},
-  {name:"Free Dessert", prob:10, img:"dessert.png"},
-  {name:"Free Coffee", prob:10, img:"coffee.png"},
-  {name:"Free Coke", prob:15, img:"coke.png"},
-  {name:"Free Fries", prob:15, img:"fries.png"},
-  {name:"Free Burger", prob:10, img:"burger.png"},
-  {name:"10% OFF", prob:10, img:"discount.png"},
-  {name:"20% OFF", prob:10, img:"discount20.png"},
+  {name:"احلي صاصا في الدنيا", prob:10, img:"1.png"},
+  {name:"احن واطيب واحدة في الدنيا", prob:10, img:"2.png"},
+  {name:"لو لفيت الدنيا مش هلاقي حد زيك انت عوض ربنا ليا", prob:10, img:"3.png"},
+  {name:"سهيلة يعني روح قلبي واغلي حد ف حياتي", prob:15, img:"4.png"},
+  {name:"انت اولوياتي وانت حياتي", prob:15, img:"5.png"},
+  {name:"انت روح قلبي", prob:10, img:"6.png"},
+  {name:"احلى ام يزن في الدنيا", prob:10, img:"7.png"},
+  {name:"انت نور عيني وعمري وحياتي", prob:10, img:"8.png"},
   {name:"Try Again", prob:10, img:"try.png"},
-  {name:"Lose", prob:10, img:"lose.png"}
+  {name:"Lose", prob:10, img:"9.png"}
 ];
 
 const segmentColors = [
@@ -35,19 +35,15 @@ const segmentColors = [
 ];
 
 const loseMessages = [
-  "You lost, champ… the wheel’s got beef with you!😂 خسرت يا بطل.. العجلة مش بتحبك!",
-  "You’re gonna need a lot more practice, champ!🤣 شكلك محتاج تدريب أكتر!",
-  "The wheel said nope… try your luck again!😅 العجلة قالتلك لأ.. جرب حظك تاني!",
-  "You lost… but look, you’re still smiling!🙃 خسارة.. بس على الأقل عندك ابتسامة!",
-  "The wheel laughed at you… try again after the password!🤪 العجلة ضحكت عليك.. حاول تاني بعد الباسورد!"
+  "بحبك",
+  "بعشقك اوي",
+
 ];
 
 const tryAgainMessages = [
   "Spin it again!🔄 جرب مرة تانية!",
   "You’ve still got a chance!😎 لسه عندك فرصة!",
-  "The wheel’s giving you hope again!😉 العجلة بتديك أمل تاني!",
-  " Second try might be luckier!🔥 المحاولة التانية ممكن تكون أوفر!",
-  " Try again, maybe you’ll win!💡 جرب تاني يمكن تكسب!"
+
 ];
 
 // رسم العجلة
@@ -144,7 +140,7 @@ function spinWheel() {
       winnerText.className = "lose";
       spinAllowed = false;
     } else {
-      winnerText.textContent = "🎉 Congrats! You’ve won : " + prize.name;
+      winnerText.textContent = "🎉 ربنا يجعلك من نصيبي يارب : " + prize.name;
       winnerText.className = "success";
       spinAllowed = false;
       startConfetti();
@@ -278,3 +274,4 @@ saveAdmin.addEventListener("click", () => {
   drawWheel(); // إعادة رسم العجلة بالقيم الجديدة
 
 });
+
